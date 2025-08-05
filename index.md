@@ -2,7 +2,7 @@
 📧 [anupcbalharpure@gmail.com](mailto:anupcbalharpure@gmail.com)
 📞 [Call](tel:+919421784577) | 💬 [WhatsApp](https://wa.me/919421784577)
 🔗 [LinkedIn](https://www.linkedin.com/in/anupbalharpure)
-💻 [Portfolio](https://ab.github.io)
+💻 [Portfolio](https://aatronics.github.io)
 
 ---
 

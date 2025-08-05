@@ -1,0 +1,5 @@
+# _config.yml
+theme: jekyll-theme-midnight
+title: ANUP C BALHARPURE
+description: Professional Portfolio of Dr.AB
+show_downloads: false # This line hides the "View on GitHub" button

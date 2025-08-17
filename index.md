@@ -6,6 +6,21 @@
 
 ---
 
+## 👁️ Visitor Counter
+
+<span id="counter">Loading...</span>
+
+<script>
+fetch('https://api.countapi.xyz/update/aatronicsGitPage/index/?amount=1')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('counter').innerText = `Visitor Count: ${data.value}`;
+  });
+</script>
+
+---
+---
+
 ## 💼 Professional Summary
 Software Development Engineer with over 12 years of experience specializing in embedded systems for automotive, IoT, and industrial automation. Expertise in full software development lifecycle (SDLC), C/C++, Python, and delivering robust firmware solutions from concept to deployment.
 

@@ -1,0 +1,9 @@
+<!-- filepath: e:\pData\AB\aatronicsGitPage\aatronics.github.io\_includes\counter.html -->
+<span id="counter">Loading...</span>
+<script>
+fetch('https://api.countapi.xyz/update/aatronicsGitPage/index/?amount=1')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('counter').innerText = `Visitor Count: ${data.value}`;
+  });
+</script>

@@ -4,21 +4,7 @@
 🔗 [LinkedIn](https://www.linkedin.com/in/anupbalharpure)
 💻 [Portfolio](https://aatronics.github.io)
 
----
 
-## 👁️ Visitor Counter
-
-<span id="counter">Loading...</span>
-
-<script>
-fetch('https://api.countapi.xyz/update/aatronicsGitPage/index/?amount=1')
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById('counter').innerText = `Visitor Count: ${data.value}`;
-  });
-</script>
-
----
 ---
 
 ## 💼 Professional Summary
@@ -77,6 +63,16 @@ Software Development Engineer with over 12 years of experience specializing in e
   - Maharashtra State Eligibility Test (SET)  
   - Multiple “Spot” & “Star” Awards at Continental and Capgemini for exceptional delivery  
 
+---
+
+## 👁️ Visitor Counter
+
+{% include counter.html %}
+
+---
+## 👁️ Visitor Counter
+
+![Visitor Counter](https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=ip&initCount=0)
 ---
 
 ## 📂 Projects

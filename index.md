@@ -65,19 +65,13 @@ Software Development Engineer with over 12 years of experience specializing in e
 
 ---
 
-## 👁️ Visitor Counter
-
-{% include counter.html %}
-
----
-## 👁️ Visitor Counter
-
-![Visitor Counter](https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=ip&initCount=0)
----
-
 ## 📂 Projects
 To see a detailed list of my work, including IoT gateways, automotive modules, and firmware algorithms, please visit my projects page.
 
 **[➡️ View My Project Details](./projects.html)**
 
+---
+## 👁️ Visitor Counter
+
+![Visitor Counter](https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=ip&initCount=0)
 ---

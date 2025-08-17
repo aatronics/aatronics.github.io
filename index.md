@@ -75,35 +75,58 @@ To see a detailed list of my work, including IoT gateways, automotive modules, a
 
 ![Visitor Counter](https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=ip&initCount=0)
 ---
-<!-- World Map with Interactive Dots -->
-<div style="position:relative; display:inline-block;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="World Map" style="width:600px; border-radius:10px;">
-  
-  <!-- Blinking dot for Bangalore -->
-  <span 
-    style="
-      position:absolute;
-      left:420px;  /* Adjust X position */
-      top:340px;   /* Adjust Y position */
-      width:18px;
-      height:18px;
-      background:rgba(255,0,0,0.8);
-      border-radius:50%;
-      box-shadow:0 0 10px 2px #ff0000;
-      animation: blink 1s infinite;
-      cursor:pointer;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    "
+<!-- Responsive World Map with Interactive Dots -->
+<div id="map-container" style="position:relative; display:inline-block; max-width:100%; width:100%; overflow:hidden;">
+  <img
+    id="world-map"
+    src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg"
+    alt="World Map"
+    style="width:100%; max-width:600px; border-radius:10px; transition: transform 0.3s;"
+    onclick="zoomMap(event)"
+  >
+  <!-- Blinking dot for Bangalore (relative positioning) -->
+  <span
+    class="map-dot"
+    style="left:70%; top:57%;"
     title="Bangalore, India"
-    onclick="alert('Bangalore, India\nVisited: 2022-2025\nProjects: Continental Automotive, Capgemini Engineering')"
+    onclick="showDetails('Bangalore, India\nVisited: 2022-2025\nProjects: Continental Automotive, Capgemini Engineering')"
   ></span>
 </div>
 
 <style>
+#map-container {
+  position: relative;
+}
+.map-dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: rgba(255,0,0,0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px #ff0000;
+  animation: blink 1s infinite;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
 }
 </style>
+
+<script>
+function showDetails(msg) {
+  alert(msg);
+}
+
+// Simple zoom toggle for desktop/mobile
+let zoomed = false;
+function zoomMap(e) {
+  const img = document.getElementById('world-map');
+  zoomed = !zoomed;
+  img.style.transform = zoomed ? 'scale(1.7)' : 'scale(1)';
+}
+</script>

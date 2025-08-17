@@ -75,3 +75,35 @@ To see a detailed list of my work, including IoT gateways, automotive modules, a
 
 ![Visitor Counter](https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=ip&initCount=0)
 ---
+<!-- World Map with Interactive Dots -->
+<div style="position:relative; display:inline-block;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="World Map" style="width:600px; border-radius:10px;">
+  
+  <!-- Blinking dot for Bangalore -->
+  <span 
+    style="
+      position:absolute;
+      left:420px;  /* Adjust X position */
+      top:340px;   /* Adjust Y position */
+      width:18px;
+      height:18px;
+      background:rgba(255,0,0,0.8);
+      border-radius:50%;
+      box-shadow:0 0 10px 2px #ff0000;
+      animation: blink 1s infinite;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    "
+    title="Bangalore, India"
+    onclick="alert('Bangalore, India\nVisited: 2022-2025\nProjects: Continental Automotive, Capgemini Engineering')"
+  ></span>
+</div>
+
+<style>
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+</style>
